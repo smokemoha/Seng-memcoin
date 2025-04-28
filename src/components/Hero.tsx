@@ -31,19 +31,18 @@ const Hero: React.FC = () => {
             {/* Left */}
             <div className="flex-1 space-y-6 md:max-w-md lg:max-w-lg">
               <h1 className="text-4xl lg:text-5xl font-extrabold text-[#0D1F31]">SENG Token</h1>
-              <p className="max-w-md">
-              SENG is the future of meme fueled finance built fast, built wild, built on Solana. Powered by unstoppable energy, community driven chaos, and cutting-edge tech, SENG ignites a movement where memes tip, stake, govern, and rule. This isn&apos;t just another token — it&apos;s a revolution — and you&apos;re either riding the wave or watching from the sidelines.
+              <p className="max-w-md  text-black">
+              SENG is the future of meme fueled finance built fast, built wild, built on Solana. Powered by unstoppable energy, community driven chaos, and cutting edge tech, SENG ignites a movement where memes tip, stake, govern, and rule. This isn&apos;t just another token it&apos;s a revolution and you&apos;re either riding the wave or watching from the sidelines.
               </p>
               <div className="flex space-x-4">
-                <button className="bg-[#FF8103]  text-white px-6 py-2 rounded-md">
+                <button className="bg-[#FF8103]  text-black px-6 py-2 rounded-md">
                   Buy
                 </button>
-                <button className="border border-[#FF8103] text-[#f0ece9] hover:bg-[#FF8103] hover:text-white px-6 py-2 rounded-md transition">
+                <button className="border border-[#FF8103] text-[#0D1F31] hover:bg-[#FF8103] hover:text-black px-6 py-2 rounded-md transition">
                   Learn More
                 </button>
               </div>
 
-              
             </div>
 
             {/* Right */}

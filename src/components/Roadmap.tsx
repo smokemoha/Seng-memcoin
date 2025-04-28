@@ -1,12 +1,15 @@
 "use client"
 
 import React from 'react'
+import ScrollAnimation from './ScrollAnimation'
 
 const Roadmap = () => {
   return (
     <div className="py-20 px-4 bg-gradient-to-r from-yellow-400 via-orange-400 to-yellow-400 pt-16 pb-8 text-[#0D1F31]">
       {/* Heading */}
-      <h2 className="text-4xl font-bold text-center text-[#0D1F31] mb-12">Roadmap</h2>
+      <ScrollAnimation direction="up" delay={0.2}>
+        <h2 className="text-4xl font-bold text-center text-[#0D1F31] mb-12">Roadmap</h2>
+      </ScrollAnimation>
       
       {/* Timeline Container */}
       <div className="max-w-6xl mx-auto relative">
@@ -17,7 +20,7 @@ const Roadmap = () => {
         <div className="space-y-16">
           {/* Phase 1 */}
           <div className="flex flex-col md:flex-row items-center justify-between">
-            <div className="w-full md:w-5/12 pr-0 md:pr-8 mb-8 md:mb-0">
+            <ScrollAnimation direction="left" delay={0.3} className="w-full md:w-5/12 pr-0 md:pr-8 mb-8 md:mb-0">
               <div className="bg-white bg-opacity-25 backdrop-filter backdrop-blur-sm p-6 rounded-lg shadow-md border border-white border-opacity-20">
                 <p className="text-[#6D1DC6] font-bold mb-2">Phase 1</p>
                 <h3 className="text-xl font-bold text-[#0D1F31] mb-3">Foundation & Solana Launch</h3>
@@ -28,7 +31,7 @@ const Roadmap = () => {
                   <li><span className="font-semibold">Socials Setup:</span> Twitter, Discord, Telegram, Instagram with a meme army built for viral engagement.</li>
                 </ul>
               </div>
-            </div>
+            </ScrollAnimation>
             
             <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 flex items-center justify-center">
               <div className="w-6 h-6 bg-[#6D1DC6] rounded-full z-10 shadow-lg"></div>
@@ -45,7 +48,7 @@ const Roadmap = () => {
               <div className="w-6 h-6 bg-[#6D1DC6] rounded-full z-10 shadow-lg"></div>
             </div>
             
-            <div className="w-full md:w-5/12 pl-0 md:pl-8 order-1 md:order-2 mb-8 md:mb-0">
+            <ScrollAnimation direction="right" delay={0.4} className="w-full md:w-5/12 pl-0 md:pl-8 order-1 md:order-2 mb-8 md:mb-0">
               <div className="bg-white bg-opacity-25 backdrop-filter backdrop-blur-sm p-6 rounded-lg shadow-md border border-white border-opacity-20">
                 <p className="text-[#6D1DC6] font-bold mb-2">Phase 2</p>
                 <h3 className="text-xl font-bold text-[#0D1F31] mb-3">Launch & Community Hype</h3>
@@ -57,12 +60,12 @@ const Roadmap = () => {
                   <li><span className="font-semibold">Smart Contract Audit:</span> Lightweight audit from a Solana audit firm or community review.</li>
                 </ul>
               </div>
-            </div>
+            </ScrollAnimation>
           </div>
           
           {/* Phase 3 */}
           <div className="flex flex-col md:flex-row items-center justify-between">
-            <div className="w-full md:w-5/12 pr-0 md:pr-8 mb-8 md:mb-0">
+            <ScrollAnimation direction="left" delay={0.5} className="w-full md:w-5/12 pr-0 md:pr-8 mb-8 md:mb-0">
               <div className="bg-white bg-opacity-25 backdrop-filter backdrop-blur-sm p-6 rounded-lg shadow-md border border-white border-opacity-20">
                 <p className="text-[#6D1DC6] font-bold mb-2">Phase 3</p>
                 <h3 className="text-xl font-bold text-[#0D1F31] mb-3">Ecosystem & NFT Integration</h3>
@@ -73,7 +76,7 @@ const Roadmap = () => {
                   <li><span className="font-semibold">Integration with Solana Tools:</span> Support Phantom, Solflare, and Backpack Wallet.</li>
                 </ul>
               </div>
-            </div>
+            </ScrollAnimation>
             
             <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 flex items-center justify-center">
               <div className="w-6 h-6 bg-[#6D1DC6] rounded-full z-10 shadow-lg"></div>
@@ -90,7 +93,7 @@ const Roadmap = () => {
               <div className="w-6 h-6 bg-[#6D1DC6] rounded-full z-10 shadow-lg"></div>
             </div>
             
-            <div className="w-full md:w-5/12 pl-0 md:pl-8 order-1 md:order-2 mb-8 md:mb-0">
+            <ScrollAnimation direction="right" delay={0.6} className="w-full md:w-5/12 pl-0 md:pl-8 order-1 md:order-2 mb-8 md:mb-0">
               <div className="bg-white bg-opacity-25 backdrop-filter backdrop-blur-sm p-6 rounded-lg shadow-md border border-white border-opacity-20">
                 <p className="text-[#6D1DC6] font-bold mb-2">Phase 4</p>
                 <h3 className="text-xl font-bold text-[#0D1F31] mb-3">Growth & Exposure</h3>
@@ -100,12 +103,12 @@ const Roadmap = () => {
                   <li><span className="font-semibold">Cross-Promo & Campaigns:</span> Community events, livestreams, and meme marketing blitz.</li>
                 </ul>
               </div>
-            </div>
+            </ScrollAnimation>
           </div>
           
           {/* Phase 5 */}
           <div className="flex flex-col md:flex-row items-center justify-between">
-            <div className="w-full md:w-5/12 pr-0 md:pr-8">
+            <ScrollAnimation direction="left" delay={0.7} className="w-full md:w-5/12 pr-0 md:pr-8">
               <div className="bg-white bg-opacity-25 backdrop-filter backdrop-blur-sm p-6 rounded-lg shadow-md border border-white border-opacity-20">
                 <p className="text-[#6D1DC6] font-bold mb-2">Phase 5</p>
                 <h3 className="text-xl font-bold text-[#0D1F31] mb-3">Long-Term Ecosystem</h3>
@@ -116,7 +119,7 @@ const Roadmap = () => {
                   <li><span className="font-semibold">Roadmap v2 Planning:</span> Based on community votes and Solana ecosystem trends.</li>
                 </ul>
               </div>
-            </div>
+            </ScrollAnimation>
             
             <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 flex items-center justify-center">
               <div className="w-6 h-6 bg-[#6D1DC6] rounded-full z-10 shadow-lg"></div>

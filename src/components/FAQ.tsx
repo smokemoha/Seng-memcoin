@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react'
 import { Plus, Minus } from 'lucide-react'
+import ScrollAnimation from './ScrollAnimation'
 
 interface FAQItem {
   question: string
@@ -32,14 +33,16 @@ const FAQ: React.FC = () => {
 
   return (
     <section className="bg-gradient-to-l from-yellow-400 via-orange-400 to-yellow-400 pt-16 pb-8 text-[#0D1F31]">
-      <div className="max-w-3xl mx-auto px-4 text-center">
+      <ScrollAnimation direction="up" delay={0.2} className="max-w-3xl mx-auto px-4 text-center">
         <h2 className="text-4xl font-bold mb-4">Frequently Asked Questions</h2>
         <p className="text-lg mb-12">Everything you need to know about SENG Token.</p>
 
         <div className="space-y-4">
           {faqData.map((faq, index) => (
-            <div
-              key={index}
+            <ScrollAnimation 
+              key={index} 
+              direction="up" 
+              delay={0.3 + index * 0.1} 
               className="bg-white-400 rounded-lg overflow-hidden"
             >
               <button
@@ -55,10 +58,10 @@ const FAQ: React.FC = () => {
                   {faq.answer}
                 </div>
               )}
-            </div>
+            </ScrollAnimation>
           ))}
         </div>
-      </div>
+      </ScrollAnimation>
     </section>
   )
 }

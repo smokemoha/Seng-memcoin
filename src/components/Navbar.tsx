@@ -40,7 +40,7 @@ const Navbar = () => {
         </ul>
 
         <div className="hidden md:block">
-          <button className="bg-[#FF8103] hover:bg-[#e67602] text-white px-6 py-2 rounded-full font-medium transition-all duration-300 hover:shadow-lg transform hover:-translate-y-1">
+          <button className="bg-[#FF8103] hover:bg-[#e67602] text-black px-6 py-2 rounded-full font-medium transition-all duration-300 hover:shadow-lg transform hover:-translate-y-1">
             Buy
           </button>
         </div>
@@ -72,7 +72,7 @@ const Navbar = () => {
             ))}
             <li className="pt-2">
               <button 
-                className="w-full bg-[#FF8103] hover:bg-[#e67602] text-white px-4 py-3 rounded-md transition-colors font-medium"
+                className="w-full bg-[#FF8103] hover:bg-[#e67602] text-black px-4 py-3 rounded-md transition-colors font-medium"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Buy
