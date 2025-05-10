@@ -14,7 +14,7 @@ SENG is a community-driven memecoin built on the Solana blockchain, combining th
 - Styling : Tailwind CSS
 - Animations : Framer Motion
 - State Management : React Context API
-- Deployment : Vercel
+- Deployment : Netlify
 ##  Project Structure
 seng-memecoin/
 ├── public/            # Static assets
